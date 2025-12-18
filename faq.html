@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - ImageCompress Pro</title>
+    <meta name="description" content="Frequently asked questions about ImageCompress Pro. Learn how to use our tool effectively and understand our features.">
+    <meta name="keywords" content="image compression FAQ, frequently asked questions, compression tool help, image optimization questions">
+    <meta name="author" content="ImageCompress Pro">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="FAQ - ImageCompress Pro">
+    <meta property="og:description" content="Frequently asked questions about ImageCompress Pro.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖼️</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #4F46E5;
+            --primary-dark: #4338CA;
+            --secondary-color: #10B981;
+            --dark-color: #1F2937;
+            --light-color: #F9FAFB;
+            --gray-color: #6B7280;
+            --border-color: #E5E7EB;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-color);
+            background-color: #F3F4F6;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            font-size: 28px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        nav a.active {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark-color);
+        }
+        
+        /* Page Header */
+        .page-header {
+            padding: 60px 0 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .page-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        
+        .page-header p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+        
+        /* Search Section */
+        .search-section {
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .search-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-color);
+            font-size: 20px;
+        }
+        
+        /* FAQ Categories */
+        .faq-categories {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        
+        .category-btn {
+            padding: 12px 24px;
+            background-color: white;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        
+        .category-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .category-btn.active {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* FAQ Accordion */
+        .faq-accordion {
+            margin-bottom: 60px;
+        }
+        
+        .faq-category-section {
+            margin-bottom: 40px;
+        }
+        
+        .faq-category-section h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            margin-bottom: 25px;
+            color: var(--dark-color);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        
+        .faq-question:hover {
+            background-color: #F9FAFB;
+        }
+        
+        .faq-question.active {
+            background-color: rgba(79, 70, 229, 0.05);
+        }
+        
+        .faq-icon {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .faq-question.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        
+        .faq-answer.active {
+            padding: 0 20px 20px;
+            max-height: 1000px;
+        }
+        
+        .faq-answer p {
+            color: var(--gray-color);
+            margin-bottom: 15px;
+        }
+        
+        .faq-answer ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .faq-answer li {
+            margin-bottom: 8px;
+            color: var(--gray-color);
+        }
+        
+        /* Quick Tips Section */
+        .quick-tips {
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .quick-tips h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: var(--dark-color);
+            text-align: center;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .tip-card {
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .tip-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+        
+        .tip-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .tip-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        /* Support Section */
+        .support-section {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            border-radius: var(--radius);
+        }
+        
+        .support-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .support-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .support-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 50px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #D1D5DB;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #374151;
+            color: #9CA3AF;
+            font-size: 14px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .page-header h1 {
+                font-size: 32px;
+            }
+            
+            .faq-categories {
+                flex-wrap: wrap;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .page-header {
+                padding: 40px 0 30px;
+            }
+            
+            .page-header h1 {
+                font-size: 28px;
+            }
+            
+            .search-section {
+                padding: 25px;
+            }
+            
+            .support-section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🖼️</span>
+                <span>ImageCompress Pro</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about ImageCompress Pro</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <!-- Search Section -->
+        <section class="search-section">
+            <h2>Find Answers Quickly</h2>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search for answers...">
+                <span class="search-icon">🔍</span>
+            </div>
+        </section>
+
+        <!-- FAQ Categories -->
+        <div class="faq-categories">
+            <button class="category-btn active" data-category="all">All Questions</button>
+            <button class="category-btn" data-category="general">General</button>
+            <button class="category-btn" data-category="technical">Technical</button>
+            <button class="category-btn" data-category="privacy">Privacy & Security</button>
+            <button class="category-btn" data-category="usage">Usage Tips</button>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="faq-accordion">
+            <!-- General Questions -->
+            <div class="faq-category-section" id="general">
+                <h3>General Questions</h3>
+                
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <span>Is ImageCompress Pro really free to use?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, ImageCompress Pro is completely free to use with no hidden charges, subscriptions, or premium tiers. We believe in providing accessible image optimization tools to everyone.</p>
+                        <p>Our tool is supported by unobtrusive advertisements that help cover operational costs while maintaining a free service for all users.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <span>What image formats do you support?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We support the following image formats:</p>
+                        <ul>
+                            <li><strong>JPG/JPEG:</strong> Most common format for photographs</li>
+                            <li><strong>PNG:</strong> Best for graphics with transparency</li>
+                            <li><strong>WebP:</strong> Modern format with superior compression</li>
+                        </ul>
+                        <p>You can compress images in their original format or convert between these formats during compression.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <span>Is there a file size limit?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, the maximum file size is 10MB. This limit ensures:</p>
+                        <ul>
+                            <li>Optimal performance in your browser</li>
+                            <li>Reasonable processing time</li>
+                            <li>Stable operation across different devices</li>
+                        </ul>
+                        <p>For larger files, we recommend using desktop image editing software or splitting the images before compression.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Questions -->
+            <div class="faq-category-section" id="technical">
+                <h3>Technical Questions</h3>
+                
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <span>How does browser-based compression work?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ImageCompress Pro uses HTML5 Canvas and JavaScript APIs to process images directly in your browser:</p>
+                        <ol>
+                            <li>Your image is loaded into browser memory (never uploaded to our servers)</li>
+                            <li>The canvas API applies compression algorithms locally</li>
+                            <li>Processed image data stays on your device</li>
+                            <li>You download the compressed image directly</li>
+                        </ol>
+                        <p>This approach ensures maximum privacy and eliminates server processing delays.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <span>Which browsers are supported?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ImageCompress Pro works on all modern browsers including:</p>
+                        <ul>
+                            <li>Google Chrome (version 65+)</li>
+                            <li>Mozilla Firefox (version 60+)</li>
+                            <li>Safari (version 11+)</li>
+                            <li>Microsoft Edge (version 79+)</li>
+                            <li>Opera (version 52+)</li>
+                        </ul>
+                        <p>For the best experience, we recommend using the latest version of your browser.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy & Security -->
+            <div class="faq-category-section" id="privacy">
+                <h3>Privacy & Security</h3>
+                
+                <div class="faq-item" data-category="privacy">
+                    <div class="faq-question">
+                        <span>Are my images safe and private?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Absolutely!</strong> ImageCompress Pro is designed with privacy as a top priority:</p>
+                        <ul>
+                            <li><strong>No Uploads:</strong> Your images never leave your device</li>
+                            <li><strong>Local Processing:</strong> All compression happens in your browser</li>
+                            <li><strong>No Storage:</strong> We don't store any images on our servers</li>
+                            <li><strong>No Tracking:</strong> We don't track your image processing activities</li>
+                        </ul>
+                        <p>Once you close the browser tab, all image data is automatically cleared from memory.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="privacy">
+                    <div class="faq-question">
+                        <span>Do you collect any personal data?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We collect minimal, anonymous usage statistics to improve our service:</p>
+                        <ul>
+                            <li>Number of images compressed (anonymous count)</li>
+                            <li>Browser type and version (for compatibility)</li>
+                            <li>Device type (mobile/desktop for optimization)</li>
+                        </ul>
+                        <p>We <strong>DO NOT</strong> collect:</p>
+                        <ul>
+                            <li>Your images or image content</li>
+                            <li>Personal identification information</li>
+                            <li>IP addresses (we use anonymous analytics)</li>
+                            <li>Location data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Tips -->
+            <div class="faq-category-section" id="usage">
+                <h3>Usage Tips</h3>
+                
+                <div class="faq-item" data-category="usage">
+                    <div class="faq-question">
+                        <span>What compression level should I use?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Here's our recommended guide for compression levels:</p>
+                        <ul>
+                            <li><strong>High Compression (10-50%):</strong> Use for web images where small file size is critical. Some quality loss may be visible.</li>
+                            <li><strong>Medium Compression (51-80%):</strong> Best balance for most use cases. Good quality with noticeable file size reduction.</li>
+                            <li><strong>Low Compression (81-100%):</strong> Use when you need maximum quality preservation. Minimal file size reduction.</li>
+                        </ul>
+                        <p>Always use the real-time preview to check quality before downloading.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="usage">
+                    <div class="faq-question">
+                        <span>How can I get the best results?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Follow these tips for optimal compression results:</p>
+                        <ol>
+                            <li>Start with the "Medium Compression" preset</li>
+                            <li>Check the before/after preview carefully</li>
+                            <li>For photographs, use JPG format</li>
+                            <li>For graphics with transparency, use PNG</li>
+                            <li>For modern websites, consider WebP format</li>
+                            <li>Adjust the slider gradually to find your sweet spot</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Tips Section -->
+        <section class="quick-tips">
+            <h2>Quick Compression Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">🎯</div>
+                    <h3>Use WebP for Web</h3>
+                    <p>WebP format provides up to 30% better compression than JPG while maintaining quality.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">📱</div>
+                    <h3>Mobile Optimization</h3>
+                    <p>Compress images to under 100KB for faster mobile page loading.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">⚡</div>
+                    <h3>Batch Processing</h3>
+                    <p>Process multiple images with similar settings for consistent results.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">👁️</div>
+                    <h3>Preview Always</h3>
+                    <p>Always check the preview at 100% zoom before downloading.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section class="support-section">
+            <h2>Still Have Questions?</h2>
+            <p>Can't find the answer you're looking for? Our support team is here to help.</p>
+            <a href="contact.html" class="support-button">Contact Support</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ImageCompress Pro</h3>
+                    <p style="color: #D1D5DB;">Free online image compression tool to optimize your images for web and mobile.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Supported Formats</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">JPG/JPEG</a></li>
+                        <li><a href="#">PNG</a></li>
+                        <li><a href="#">WebP</a></li>
+                        <li><a href="#">Same as Original</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ImageCompress Pro. All rights reserved. This tool processes images entirely in your browser - no data is sent to our servers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function initMobileMenu() {
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav ul');
+            
+            if (menuBtn) {
+                menuBtn.addEventListener('click', function() {
+                    if (nav.style.display === 'flex') {
+                        nav.style.display = 'none';
+                    } else {
+                        nav.style.display = 'flex';
+                        nav.style.flexDirection = 'column';
+                        nav.style.position = 'absolute';
+                        nav.style.top = '100%';
+                        nav.style.right = '20px';
+                        nav.style.backgroundColor = 'white';
+                        nav.style.padding = '20px';
+                        nav.style.borderRadius = '8px';
+                        nav.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                        nav.style.width = '200px';
+                        nav.style.zIndex = '1000';
+                    }
+                });
+            }
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (nav && nav.style.display === 'flex' && 
+                    !nav.contains(e.target) && 
+                    !menuBtn.contains(e.target)) {
+                    nav.style.display = 'none';
+                }
+            });
+        }
+        
+        // FAQ Accordion
+        function initFAQAccordion() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isActive = answer.classList.contains('active');
+                    
+                    // Toggle current answer
+                    if (isActive) {
+                        answer.classList.remove('active');
+                        question.classList.remove('active');
+                    } else {
+                        answer.classList.add('active');
+                        question.classList.add('active');
+                    }
+                });
+            });
+        }
+        
+        // Category Filtering
+        function initCategoryFilter() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const category = btn.getAttribute('data-category');
+                    
+                    // Filter FAQ items
+                    faqItems.forEach(item => {
+                        const itemCategory = item.getAttribute('data-category');
+                        
+                        if (category === 'all' || category === itemCategory) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                    
+                    // Show/hide category sections
+                    const sections = document.querySelectorAll('.faq-category-section');
+                    sections.forEach(section => {
+                        if (category === 'all' || category === section.id) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+        
+        // Search Functionality
+        function initSearch() {
+            const searchInput = document.querySelector('.search-input');
+            
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const faqItems = document.querySelectorAll('.faq-item');
+                const sections = document.querySelectorAll('.faq-category-section');
+                
+                if (searchTerm === '') {
+                    // Reset to show all
+                    faqItems.forEach(item => item.style.display = 'block');
+                    sections.forEach(section => section.style.display = 'block');
+                    return;
+                }
+                
+                // Hide all items initially
+                faqItems.forEach(item => item.style.display = 'none');
+                sections.forEach(section => section.style.display = 'none');
+                
+                // Show matching items and their sections
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question span:first-child').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        const section = item.closest('.faq-category-section');
+                        if (section) section.style.display = 'block';
+                    }
+                });
+            });
+        }
+        
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            initMobileMenu();
+            initFAQAccordion();
+            initCategoryFilter();
+            initSearch();
+        });
+    </script>
+</body>
+</html>
