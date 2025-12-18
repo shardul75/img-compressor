@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - ImageCompress Pro</title>
+    <meta name="description" content="Discover the powerful features of ImageCompress Pro - the ultimate online image optimization tool for all your needs.">
+    <meta name="keywords" content="image compression features, optimize images, file size reduction, browser-based compression">
+    <meta name="author" content="ImageCompress Pro">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Features - ImageCompress Pro">
+    <meta property="og:description" content="Discover the powerful features of ImageCompress Pro.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖼️</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #4F46E5;
+            --primary-dark: #4338CA;
+            --secondary-color: #10B981;
+            --dark-color: #1F2937;
+            --light-color: #F9FAFB;
+            --gray-color: #6B7280;
+            --border-color: #E5E7EB;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-color);
+            background-color: #F3F4F6;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            font-size: 28px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        nav a.active {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark-color);
+        }
+        
+        /* Page Header */
+        .page-header {
+            padding: 60px 0 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .page-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        
+        .page-header p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+        
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .feature-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .feature-card p {
+            color: var(--gray-color);
+            margin-bottom: 15px;
+        }
+        
+        .feature-benefits {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        .feature-benefits li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-benefits li:last-child {
+            border-bottom: none;
+        }
+        
+        .benefit-icon {
+            color: var(--secondary-color);
+            font-size: 18px;
+        }
+        
+        /* Comparison Section */
+        .comparison-section {
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .comparison-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--dark-color);
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #F9FAFB;
+        }
+        
+        .check-mark {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        .x-mark {
+            color: #EF4444;
+            font-weight: bold;
+        }
+        
+        /* Use Cases Section */
+        .use-cases-section {
+            margin-bottom: 60px;
+        }
+        
+        .use-cases-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--dark-color);
+        }
+        
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .use-case-card {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 25px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+        
+        .use-case-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+        
+        .use-case-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            border-radius: var(--radius);
+            margin-top: 60px;
+        }
+        
+        .cta-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 50px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #D1D5DB;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #374151;
+            color: #9CA3AF;
+            font-size: 14px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .page-header h1 {
+                font-size: 32px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .page-header {
+                padding: 40px 0 30px;
+            }
+            
+            .page-header h1 {
+                font-size: 28px;
+            }
+            
+            .comparison-section {
+                padding: 25px;
+            }
+            
+            .cta-section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🖼️</span>
+                <span>ImageCompress Pro</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="features.html" class="active">Features</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Powerful Features</h1>
+            <p>Discover everything ImageCompress Pro offers for all your image optimization needs</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast Compression</h3>
+                <p>Optimize images in seconds with our high-speed compression engine. No waiting for uploads or downloads from external servers.</p>
+                <ul class="feature-benefits">
+                    <li><span class="benefit-icon">✓</span> Process images up to 10MB instantly</li>
+                    <li><span class="benefit-icon">✓</span> Real-time preview during compression</li>
+                    <li><span class="benefit-icon">✓</span> Batch processing capabilities</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Complete Privacy Protection</h3>
+                <p>Your images never leave your device. All processing happens locally in your browser for maximum security and privacy.</p>
+                <ul class="feature-benefits">
+                    <li><span class="benefit-icon">✓</span> No server uploads required</li>
+                    <li><span class="benefit-icon">✓</span> No data collection or tracking</li>
+                    <li><span class="benefit-icon">✓</span> Delete files instantly after processing</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Advanced Format Support</h3>
+                <p>Support for all major image formats with intelligent format conversion options to optimize for specific use cases.</p>
+                <ul class="feature-benefits">
+                    <li><span class="benefit-icon">✓</span> JPG, PNG, and WebP support</li>
+                    <li><span class="benefit-icon">✓</span> Format-to-format conversion</li>
+                    <li><span class="benefit-icon">✓</span> Maintain or change format</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Precise Quality Control</h3>
+                <p>Fine-tune compression with granular controls. Balance between file size and image quality with our intuitive slider.</p>
+                <ul class="feature-benefits">
+                    <li><span class="benefit-icon">✓</span> Adjustable compression levels</li>
+                    <li><span class="benefit-icon">✓</span> Real-time before/after preview</li>
+                    <li><span class="benefit-icon">✓</span> Detailed file size comparisons</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Fully Responsive Design</h3>
+                <p>Works perfectly on all devices - desktop, tablet, and mobile. Optimize images wherever you are, on any device.</p>
+                <ul class="feature-benefits">
+                    <li><span class="benefit-icon">✓</span> Mobile-optimized interface</li>
+                    <li><span class="benefit-icon">✓</span> Touch-friendly controls</li>
+                    <li><span class="benefit-icon">✓</span> Adaptive layout for all screens</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Zero Installation Required</h3>
+                <p>Access our tool directly from any modern web browser. No downloads, no installations, no updates needed.</p>
+                <ul class="feature-benefits">
+                    <li><span class="benefit-icon">✓</span> Works in Chrome, Firefox, Safari, Edge</li>
+                    <li><span class="benefit-icon">✓</span> No registration or login required</li>
+                    <li><span class="benefit-icon">✓</span> Completely free to use</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Comparison Section -->
+        <section class="comparison-section">
+            <h2>Why Choose ImageCompress Pro?</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>ImageCompress Pro</th>
+                        <th>Other Online Tools</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Privacy Protection</td>
+                        <td><span class="check-mark">✓</span> Browser-based (No uploads)</td>
+                        <td><span class="x-mark">✗</span> Server uploads required</td>
+                    </tr>
+                    <tr>
+                        <td>File Size Limit</td>
+                        <td><span class="check-mark">✓</span> Up to 10MB</td>
+                        <td><span class="check-mark">✓</span> Usually 5-10MB</td>
+                    </tr>
+                    <tr>
+                        <td>Supported Formats</td>
+                        <td><span class="check-mark">✓</span> JPG, PNG, WebP</td>
+                        <td><span class="check-mark">✓</span> Varies by tool</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td><span class="check-mark">✓</span> Completely Free</td>
+                        <td><span class="x-mark">✗</span> Often freemium/paid</td>
+                    </tr>
+                    <tr>
+                        <td>Watermarks</td>
+                        <td><span class="check-mark">✓</span> No watermarks</td>
+                        <td><span class="x-mark">✗</span> Often adds watermarks</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td><span class="check-mark">✓</span> Instant processing</td>
+                        <td><span class="x-mark">✗</span> Depends on server load</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section class="use-cases-section">
+            <h2>Perfect For</h2>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">🌐</div>
+                    <h3>Web Developers</h3>
+                    <p>Optimize images for faster website loading and better SEO performance.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Reduce app size by compressing images without losing visual quality.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">📧</div>
+                    <h3>Email Marketing</h3>
+                    <p>Shrink images for faster email delivery and better engagement rates.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">📸</div>
+                    <h3>Photographers</h3>
+                    <p>Create web-ready versions of high-resolution photos while preserving quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2>Experience Premium Features for Free</h2>
+            <p>Join thousands of users who trust ImageCompress Pro for their image optimization needs</p>
+            <a href="index.html" class="cta-button">Start Using Now</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ImageCompress Pro</h3>
+                    <p style="color: #D1D5DB;">Free online image compression tool to optimize your images for web and mobile.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Supported Formats</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">JPG/JPEG</a></li>
+                        <li><a href="#">PNG</a></li>
+                        <li><a href="#">WebP</a></li>
+                        <li><a href="#">Same as Original</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ImageCompress Pro. All rights reserved. This tool processes images entirely in your browser - no data is sent to our servers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function initMobileMenu() {
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav ul');
+            
+            if (menuBtn) {
+                menuBtn.addEventListener('click', function() {
+                    if (nav.style.display === 'flex') {
+                        nav.style.display = 'none';
+                    } else {
+                        nav.style.display = 'flex';
+                        nav.style.flexDirection = 'column';
+                        nav.style.position = 'absolute';
+                        nav.style.top = '100%';
+                        nav.style.right = '20px';
+                        nav.style.backgroundColor = 'white';
+                        nav.style.padding = '20px';
+                        nav.style.borderRadius = '8px';
+                        nav.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                        nav.style.width = '200px';
+                        nav.style.zIndex = '1000';
+                    }
+                });
+            }
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (nav && nav.style.display === 'flex' && 
+                    !nav.contains(e.target) && 
+                    !menuBtn.contains(e.target)) {
+                    nav.style.display = 'none';
+                }
+            });
+        }
+        
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            initMobileMenu();
+        });
+    </script>
+</body>
+</html>
