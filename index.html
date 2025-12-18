@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImageCompress Pro - Free Online Image Compression Tool</title>
     <meta name="description" content="Free online tool to compress and optimize images. Reduce file size while maintaining quality. Supports JPG, PNG, and WebP formats.">
-    <meta name="keywords" content="image resize,image compression, optimize images, reduce file size, online image compressor, JPG compression, PNG compression">
+    <meta name="keywords" content="image compression, optimize images, reduce file size, online image compressor, JPG compression, PNG compression">
     <meta name="author" content="ImageCompress Pro">
     <link rel="canonical" href="https://example.com/image-compressor">
     
@@ -14,6 +14,10 @@
     <meta property="og:description" content="Free online tool to compress and optimize images. Reduce file size while maintaining quality.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://example.com/image-compressor">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2974312356363084"
+            crossorigin="anonymous"></script>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖼️</text></svg>">
@@ -80,6 +84,7 @@
             font-weight: 700;
             font-size: 24px;
             color: var(--primary-color);
+            text-decoration: none;
         }
         
         .logo-icon {
@@ -101,6 +106,11 @@
         
         nav a:hover {
             color: var(--primary-color);
+        }
+        
+        nav a.active {
+            color: var(--primary-color);
+            font-weight: 600;
         }
         
         .mobile-menu-btn {
@@ -637,17 +647,17 @@
     <!-- Header -->
     <header>
         <div class="container header-content">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo-icon">🖼️</span>
                 <span>ImageCompress Pro</span>
-            </div>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="/img-compressor/how-it-works.html">How It Works</a></li>
-                    <li><a href="/img-compressor/features">Features</a></li>
-                    <li><a href="/img-compressor/faq">FAQ</a></li>
-                    <li><a href="/img-compressor/contact">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <button class="mobile-menu-btn">☰</button>
@@ -762,39 +772,38 @@
         </div>
 
         <!-- Sidebar with Ad Space and Info -->
-            <div class="sidebar">
-                <!-- Ad Space 1 -->
-                <div class="ad-space">
-                    <div class="ad-label">Advertisement</div>
-                    <!-- Google AdSense Ad Unit 1 -->
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-2974312356363084"
-                            crossorigin="anonymous"></script>
-                    <ins class="adsbygoogle"
-                         style="display:block;"
-                         data-ad-client="ca-pub-2974312356363084"
-                         data-ad-slot="3295439608"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-            
-                <!-- Ad Space 2 -->
-                <div class="ad-space">
-                    <div class="ad-label">Advertisement</div>
-                    <!-- Google AdSense Ad Unit 2 -->
-                    <ins class="adsbygoogle"
-                         style="display:block;"
-                         data-ad-client="ca-pub-2974312356363084"
-                         data-ad-slot="3221070370"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
+        <div class="sidebar">
+            <!-- Ad Space 1 -->
+            <div class="ad-space">
+                <div class="ad-label">Advertisement</div>
+                <!-- Google AdSense Ad Unit 1 -->
+                <ins class="adsbygoogle"
+                     style="display:block;"
+                     data-ad-client="ca-pub-2974312356363084"
+                     data-ad-slot="3295439608"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
+        
+            <!-- Ad Space 2 -->
+            <div class="ad-space">
+                <div class="ad-label">Advertisement</div>
+                <!-- Google AdSense Ad Unit 2 -->
+                <ins class="adsbygoogle"
+                     style="display:block;"
+                     data-ad-client="ca-pub-2974312356363084"
+                     data-ad-slot="3221070370"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div> <!-- Closing container main-content -->
 
     <!-- Footer -->
     <footer>
@@ -807,10 +816,10 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="/img-compressor/how-it-works">How It Works</a></li>
-                        <li><a href="/img-compressor/features">Features</a></li>
-                        <li><a href="/img-compressor/faq">FAQ</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -828,7 +837,7 @@
                         <li><a href="#privacy">Privacy Policy</a></li>
                         <li><a href="#terms">Terms of Service</a></li>
                         <li><a href="#cookies">Cookie Policy</a></li>
-                        <li><a href="/img-compressor/contact">Contact Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
