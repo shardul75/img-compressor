@@ -608,6 +608,30 @@
             }
         }
     </style>
+
+    <style>
+      /* The Highlight and Font Styling */
+      .privacy-note {
+        background-color: #ffff00; /* Yellow highlight */
+        color: #000;
+        padding: 10px;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 4px;
+        font-family: sans-serif;
+      }
+    
+      /* The Blinking Animation */
+      .blink {
+        animation: blinker 1.5s linear infinite;
+      }
+    
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>    
 </head>
 <body>
     <!-- Header -->
@@ -634,7 +658,10 @@
     <section class="hero" id="home">
         <div class="container">
             <h1>Optimize Your Images in Seconds</h1>
-            <p>Compress JPG, PNG, and WebP images while maintaining quality. Reduce file sizes to improve website performance and save storage space.</p>
+            <p>Compress JPG, PNG, and WebP images while maintaining quality. Reduce file sizes to save storage space.</p>
+            <p class="privacy-note blink">
+                Note: We do not collect or store any personal data.
+            </p>
         </div>
     </section>
 
